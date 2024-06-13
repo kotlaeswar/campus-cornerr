@@ -184,9 +184,6 @@ function ProductForm() {
                 Post 
               </button>
             </div>
-          
-              
-            
             </div>
           </form>
         </div>

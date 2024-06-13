@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './Cart.css'; // Create and import your CSS file
+import Sidebar from './Sidebar';
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
@@ -33,6 +34,8 @@ const Cart = () => {
   };
 
   return (
+    <>
+    <Sidebar />
     <div className="cart-items" id='cart-items'>
       <div className="cart">
         {cart.map((item) => (
@@ -47,6 +50,7 @@ const Cart = () => {
         <button onClick={proceedToPayment}>Proceed to Payment</button>
       </div>
     </div>
+    </>
   );
 };
 

@@ -9,8 +9,9 @@ export default function Navbar() {
       <NavLink to="/" className="hd">
         <h2>CAMPUS CORNER</h2>
       </NavLink>
+      <input type="text" placeholder="Search" className="sbox" />
       <div className="search-box">
-        <input type="text" placeholder="Search" />
+        {/* <input type="text" placeholder="Search" /> */}
         <div className="icon">
           <MdSearch />
         </div>

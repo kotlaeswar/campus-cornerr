@@ -16,6 +16,8 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 
 app.use(cors({ origin: 'http://localhost:3000' }));
 
+
+
 // MongoDB connection URI
 const uri = 'mongodb+srv://21pa1a1256:21pa1a1256@cluster0.lhxsa2x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 

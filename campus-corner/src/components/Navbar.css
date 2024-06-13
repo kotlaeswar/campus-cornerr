@@ -20,6 +20,16 @@ body {
 .navbar h1 {
   color: black;
 }
+.sbox{
+ 
+  height: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+}
 .search-box {
   width: 400px;
   height: 13px;
@@ -31,7 +41,7 @@ body {
   border-radius: 20px;
 }
 .search-box input {
-  margin-top: 0px;
+  /* margin-top: 0px; */
   background: transparent;
 
   border: 0;

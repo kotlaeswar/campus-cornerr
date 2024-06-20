@@ -18,7 +18,7 @@ function Login({ setLoggedIn }) {
       if (response.status === 200) {
         localStorage.setItem("token", response.data.token);
         setLoggedIn(true);
-        console.log("Login successful!");
+        console.log("Login successful!");//success
         window.location.href = "/home";
       } else {
         setErrorMessage("Invalid username or password. Please try again");

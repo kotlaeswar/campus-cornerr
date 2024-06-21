@@ -13,7 +13,7 @@ import CreatorCard from "./components/creatercard";
 import RingLoader from "react-spinners/RingLoader";
 import Payment from "./components/payment";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Cart from "./components/Cart"; // Import the ProtectedRoute component
+import Cart from "./components/Cart"; // Import the ProtectedRoute componen
 
 function App() {
   const [loading, setLoading] = useState(false);

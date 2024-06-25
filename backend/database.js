@@ -186,6 +186,9 @@ app.post('/create', async (req, res) => {
 //     res.status(500).json({ error: 'An error occurred while creating product.' });
 //   }
 // });
+app.get('/',(req,res)=>{
+  res.send("serever started")
+})
 
 app.get('/products', async (req, res) => {
   try {

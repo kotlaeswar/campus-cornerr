@@ -13,8 +13,8 @@ function Login({ setLoggedIn }) {
 
     try {
       const user = { username, password };
-      // const response = await axios.post("http://localhost:5000/login", user);
-      const response = await axios.post("https://campus-cornerr.onrender.com/login", user);
+      const response = await axios.post("http://localhost:5000/login", user);
+      // const response = await axios.post("https://campus-cornerr.onrender.com/login", user);
 
       if (response.status === 200) {
         localStorage.setItem("token", response.data.token);
@@ -27,9 +27,8 @@ function Login({ setLoggedIn }) {
       }
     } catch (error) {
       console.error("Error logging in:", error);
-      alert(error)
-      // setErrorMessage("An error occurred while logging in. Please try again.");
-      // alert("An error occurred while logging in. Please try again.");
+      setErrorMessage("An error occurred while logging in. Please try again.");
+      alert("An error occurred while logging in. Please try again.");
     }
   };
 

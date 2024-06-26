@@ -53,7 +53,7 @@ function ProductForm() {
 
     setIsSubmitting(true);
     try {
-      const response = await axios.post("http://localhost:5000/create", {
+      const response = await axios.post("https://campus-cornerr.onrender.com/create", {
         ...formData,
         image: productPic,
       }, {

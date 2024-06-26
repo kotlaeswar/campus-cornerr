@@ -10,12 +10,12 @@ export default function Navbar() {
         <h2>CAMPUS CORNER</h2>
       </NavLink>
       <input type="text" placeholder="Search" className="sbox" />
-      <div className="search-box">
+      {/* <div className="search-box"> */}
         {/* <input type="text" placeholder="Search" /> */}
-        <div className="icon">
+        {/* <div className="icon">
           <MdSearch />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <div className="nav">
         <NavLink to="/sellform" className="sell-button">
           <span>+SELL</span>

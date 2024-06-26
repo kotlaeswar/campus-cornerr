@@ -11,7 +11,7 @@ const Profile = () => {
     const fetchUserDetails = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/user-details', {
+        const response = await axios.get('https://campus-cornerr.onrender.com/user-details', {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -25,7 +25,7 @@ const Profile = () => {
     const fetchUserProducts = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/user-products', {
+        const response = await axios.get('https://campus-cornerr.onrender.com/user-products', {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -43,7 +43,7 @@ const Profile = () => {
   const handleDelete = async (productId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/delete-product/${productId}`, {
+      await axios.delete(`https://campus-cornerr.onrender.com/delete-product/${productId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

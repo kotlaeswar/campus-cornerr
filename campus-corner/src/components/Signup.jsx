@@ -41,7 +41,7 @@ export default function Signup() {
 
     try {
       const newUser = { username, email, password };
-      await axios.post("http://localhost:5000/signup", newUser);
+      await axios.post("https://campus-cornerr.onrender.com/signup", newUser);
       console.log("User registered successfully!");
 
       window.location.href = "/login";

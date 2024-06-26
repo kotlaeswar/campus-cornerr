@@ -27,8 +27,9 @@ function Login({ setLoggedIn }) {
       }
     } catch (error) {
       console.error("Error logging in:", error);
-      setErrorMessage("An error occurred while logging in. Please try again.");
-      alert("An error occurred while logging in. Please try again.");
+      alert(error)
+      // setErrorMessage("An error occurred while logging in. Please try again.");
+      // alert("An error occurred while logging in. Please try again.");
     }
   };
 
